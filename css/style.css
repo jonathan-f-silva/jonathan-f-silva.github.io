@@ -1,0 +1,15 @@
+p, li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+
+.first-item {
+  font-size: 1.3em;
+}
+
+.second-item {
+  font-size: 1.1em;
+}
