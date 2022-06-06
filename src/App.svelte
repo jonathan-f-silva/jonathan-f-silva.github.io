@@ -1,20 +1,8 @@
 <script lang="ts">
   import Hero from "./lib/Hero.svelte";
+  import "./assets/styles/global.css";
 </script>
 
 <main>
   <Hero />
 </main>
-
-<style>
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-
-  main {
-    text-align: center;
-    padding: 1em;
-    margin: 0 auto;
-  }
-</style>
