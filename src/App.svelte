@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Hero from "./lib/Hero.svelte";
   import "./assets/styles/global.css";
+  import Hero from "./lib/Hero.svelte";
 </script>
 
-<main>
+<main class="md:container md:mx-auto">
   <Hero />
 </main>
