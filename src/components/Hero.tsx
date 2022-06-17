@@ -1,19 +1,23 @@
-import { Button, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import {
+  Button, Flex, Heading, Image, Link, Stack, Text,
+} from '@chakra-ui/react';
 
 import profilePic from '../assets/images/profile.jpg';
 
 function Hero() {
   return (
     <Stack minH="10vh" direction={ { base: 'column', md: 'row' } }>
-      <Flex flex={ 1 }>
-        <Image
-          rounded="full"
-          alt="Foto do perfil de Jonathan sorrindo"
-          objectFit="cover"
-          src={ profilePic }
-        />
-      </Flex>
-      <Flex p={ 8 } flex={ 1 } align="center" justify="center">
+      {/* <Flex mx="5" justifyContent="center"> */}
+      <Image
+        rounded="full"
+        w={ { base: '80%', md: '50%', xl: '30%' } }
+        margin="0 auto"
+        alt="Foto do perfil de Jonathan sorrindo"
+        objectFit="cover"
+        src={ profilePic }
+      />
+      {/* </Flex> */}
+      <Flex p={ 8 } align="center" justify="center">
         <Stack spacing={ 6 } w="full" maxW="lg">
           <Heading fontSize={ { base: '3xl', md: '5xl' } }>
             <Text as="span">Olá, sou o </Text>
@@ -26,8 +30,14 @@ function Hero() {
             Sou Summer Jobber em Currículo na Trybe e estudo Desenvolvimento Web
             e Testes em Software. Muito prazer!
           </Text>
-          <Stack direction={ { base: 'column', md: 'row' } } spacing={ 4 }>
+          <Stack
+            justify="center"
+            direction={ { base: 'column', md: 'row' } }
+            spacing={ 4 }
+          >
             <Button
+              href="#projetos"
+              as={ Link }
               rounded="full"
               bg="blue.400"
               color="white"

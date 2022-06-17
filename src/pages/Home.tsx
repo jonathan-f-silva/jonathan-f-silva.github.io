@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 
 function Home() {
   return (
-    <Container maxW={ { base: 'full', lg: 'container.xl' } } mt="5">
+    <Container maxW={ { base: 'full', lg: 'container.xl' } }>
       <Hero />
     </Container>
   );

@@ -1,13 +1,17 @@
-import './App.css';
+// import './App.css';
+import { Divider, VStack } from '@chakra-ui/react';
 import Nav from './components/Nav';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
+    <VStack textAlign="center" spacing="20">
       <Nav />
       <Home />
-    </div>
+      <Divider />
+      <Projects />
+    </VStack>
   );
 }
 
