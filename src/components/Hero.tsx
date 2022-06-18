@@ -10,7 +10,8 @@ function Hero() {
       {/* <Flex mx="5" justifyContent="center"> */}
       <Image
         rounded="full"
-        w={ { base: '80%', md: '50%', xl: '30%' } }
+        w={ { base: '50%', xl: '30%' } }
+        maxW="350px"
         margin="0 auto"
         alt="Foto do perfil de Jonathan sorrindo"
         objectFit="cover"
