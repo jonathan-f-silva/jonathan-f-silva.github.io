@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Ebytr ToDo",
+    "link": "https://jonathan-f-silva.github.io/project-ebytr-ui",
+    "logo": "https://raw.githubusercontent.com/jonathan-f-silva/project-ebytr-ui/7213d1092ad8fc5ffb4cc8cc553ae0d462dcff2b/src/assets/ebytr.svg",
+    "descriptions": [
+      "Aplicação estilo lista de tarefas feita para o Desafio da Blitz de Carreira da Trybe.",
+      "Com esse app é possível:\nListar e ordenar tarefas pela descrição, data de criação e status,\ncriar, editar e remover tarefas e alterar status de uma tarefa"
+    ]
+  }
+]
