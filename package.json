@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "deploy:gh": "npm run build && gh-pages -d dist",
     "preview": "vite preview",
     "lint": "npx eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "vitest"
@@ -35,6 +36,7 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0",
     "eslint-plugin-sonarjs": "^0.13.0",
+    "gh-pages": "^4.0.0",
     "jsdom": "^19.0.0",
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
