@@ -7,7 +7,6 @@ import profilePic from '../assets/images/profile.jpg';
 function Hero() {
   return (
     <Stack minH="10vh" direction={ { base: 'column', md: 'row' } }>
-      {/* <Flex mx="5" justifyContent="center"> */}
       <Image
         rounded="full"
         w={ { base: '50%', xl: '30%' } }
@@ -17,10 +16,9 @@ function Hero() {
         objectFit="cover"
         src={ profilePic }
       />
-      {/* </Flex> */}
       <Flex p={ 8 } align="center" justify="center">
         <Stack spacing={ 6 } w="full" maxW="lg">
-          <Heading fontSize={ { base: '3xl', md: '5xl' } }>
+          <Heading fontSize={ { base: '4xl', md: '5xl' } }>
             <Text as="span">Olá, sou o </Text>
             <Text fontStyle="italic" as="span">
               Jonathan

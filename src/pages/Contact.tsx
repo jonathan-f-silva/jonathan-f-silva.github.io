@@ -1,4 +1,4 @@
-import { VStack, Heading } from '@chakra-ui/react';
+import { Stack, VStack, Heading } from '@chakra-ui/react';
 import ContactButtons from '../components/ContactButtons';
 import ContactEmailForm from '../components/ContactEmailForm';
 
@@ -8,8 +8,15 @@ function Contact() {
       <Heading fontSize={ { base: '4xl', md: '5xl' } }>
         Contato
       </Heading>
-      <ContactButtons />
-      <ContactEmailForm />
+      <Stack
+        justifyContent="center"
+        alignItems={ { base: 'center', md: 'normal' } }
+        direction={ { base: 'column', md: 'row' } }
+        w={ { base: '80%', md: '600px' } }
+      >
+        <ContactButtons />
+        <ContactEmailForm />
+      </Stack>
     </VStack>
   );
 }

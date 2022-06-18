@@ -12,6 +12,8 @@ function ContactButtons() {
       spacing={ { base: 4, md: 8, lg: 20 } }
       direction={ { base: 'column', md: 'row' } }
       w={ { base: '80%', md: '600px' } }
+      px="5"
+      flexBasis="0"
     >
       <Stack
         align="center"

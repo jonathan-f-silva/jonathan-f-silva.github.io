@@ -14,7 +14,7 @@ function ContactEmailForm() {
       p={ 8 }
       color={ useColorModeValue('gray.700', 'whiteAlpha.900') }
       shadow="base"
-      w="full"
+      w={ { base: 'full', md: '600px' } }
       spacing={ 5 }
     >
       <FormControl isRequired>

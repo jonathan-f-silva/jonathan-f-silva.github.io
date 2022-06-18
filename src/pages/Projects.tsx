@@ -7,10 +7,7 @@ import projectList from '../utils/projectList.json';
 function Projects() {
   return (
     <VStack w="full">
-      <Heading
-        fontSize={ { base: '3xl', md: '5xl' } }
-        id="projetos"
-      >
+      <Heading fontSize={ { base: '4xl', md: '5xl' } }>
         Projetos
       </Heading>
       {projectList.map(
