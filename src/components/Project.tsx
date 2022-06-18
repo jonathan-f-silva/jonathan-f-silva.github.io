@@ -1,5 +1,5 @@
 import {
-  Box, HStack, VStack, Center, Flex,
+  Stack, HStack, VStack, Center, Flex,
   useRadioGroup, useColorModeValue,
   Heading, Text, Image,
 } from '@chakra-ui/react';
@@ -28,11 +28,11 @@ function Project({ name, link, logo, descriptions }: ProjectProps) {
     },
     {
       label: 'PC',
-      width: '1024px',
+      width: 'full',
       icon: <MdDesktopMac />,
     },
   ];
-  const [viewWidth, setViewWidth] = useState('1024px');
+  const [viewWidth, setViewWidth] = useState('full');
   const { getRadioProps } = useRadioGroup({
     name: 'displaySize',
     defaultValue: options[2].width,
@@ -40,17 +40,23 @@ function Project({ name, link, logo, descriptions }: ProjectProps) {
   });
 
   return (
-    <VStack w="full" h="600" p="5">
-      <Box />
-      <HStack w="full" h="full" justifyContent="space-evenly">
-        <VStack maxW="400px">
+    <VStack w="full" p={ { base: '2', md: '5' } }>
+      <Stack
+        direction={ { base: 'column', md: 'row' } }
+        w="full"
+        h="full"
+        alignItems="center"
+        justifyContent="space-evenly"
+        spacing="5"
+      >
+        <VStack maxW="350px">
           <Image
             alt={ `Logo do projeto ${name}` }
             // eslint-disable-next-line max-len
             src={ logo }
           />
           <Heading>{ name }</Heading>
-          <HStack>
+          <HStack display={ { base: 'none', lg: 'flex' } }>
             {options.map((value) => {
               const label = value.width;
               const radio = getRadioProps({ value: label });
@@ -65,7 +71,7 @@ function Project({ name, link, logo, descriptions }: ProjectProps) {
             <Text key={ description }>{description}</Text>
           )) }
         </VStack>
-        <Center h="full" w="65%">
+        <Center h="500" w={ { base: 'full', lg: '65%' } }>
           <Flex
             w={ viewWidth }
             h="full"
@@ -81,7 +87,7 @@ function Project({ name, link, logo, descriptions }: ProjectProps) {
             />
           </Flex>
         </Center>
-      </HStack>
+      </Stack>
     </VStack>
   );
 }

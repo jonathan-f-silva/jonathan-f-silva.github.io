@@ -6,7 +6,7 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-    <VStack textAlign="center" spacing="20">
+    <VStack textAlign="center" spacing="10">
       <Nav />
       <Home />
       <Divider />
