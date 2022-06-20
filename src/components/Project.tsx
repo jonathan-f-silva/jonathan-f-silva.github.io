@@ -14,9 +14,12 @@ type ProjectProps = {
   ghLink: string,
   logo: string,
   descriptions: string[],
+  index: number,
 }
 
-function Project({ name, link, ghLink, logo, descriptions }: ProjectProps) {
+function Project({
+  name, link, ghLink, logo, descriptions, index,
+}: ProjectProps) {
   const options = [
     {
       label: 'smart phone',
@@ -40,11 +43,12 @@ function Project({ name, link, ghLink, logo, descriptions }: ProjectProps) {
     defaultValue: options[2].width,
     onChange: setViewWidth,
   });
+  const direction = index % 2 === 0 ? '' : '-reverse';
 
   return (
     <Stack
       p={ { base: '2', md: '5' } }
-      direction={ { base: 'column', md: 'row' } }
+      direction={ { base: `column${direction}`, md: `row${direction}` } }
       w="full"
       h="full"
       alignItems="center"

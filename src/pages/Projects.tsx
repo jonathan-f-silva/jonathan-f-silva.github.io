@@ -11,7 +11,9 @@ function Projects() {
         Projetos
       </Heading>
       {projectList.map(
-        (project) => <Project key={ project.name } { ...project } />,
+        (project, index) => (
+          <Project key={ project.name } index={ index } { ...project } />
+        ),
       )}
     </VStack>
   );
