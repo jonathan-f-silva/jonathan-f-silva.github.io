@@ -46,7 +46,13 @@ function Hero() {
             >
               Projetos
             </Button>
-            <Button rounded="full">Contato</Button>
+            <Button
+              href="#contato"
+              as={ Link }
+              rounded="full"
+            >
+              Contato
+            </Button>
           </Stack>
         </Stack>
       </Flex>
